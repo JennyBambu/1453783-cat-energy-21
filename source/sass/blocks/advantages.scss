@@ -1,0 +1,26 @@
+.advantages {
+  margin-bottom: 26px;
+}
+
+.advantages__title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 38px;
+  font-family: $font-base;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black-bold;
+}
+
+.advantages__list {
+  font-family: $font-add;
+  color: $color-base;
+
+  @include lists-base;
+}
+
+.advantages__item {
+  padding-bottom: 24px;
+  padding-left: 80px;
+}

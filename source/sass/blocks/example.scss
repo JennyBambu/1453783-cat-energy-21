@@ -1,0 +1,43 @@
+.example {
+  background-color: $grey-additional;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.example__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $black-bold;
+}
+
+.example__slider {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.example__intro {
+  margin-top: 33px;
+  margin-bottom: 25px;
+  font-family: $font-add;
+  color: $color-base;
+}
+
+.example__numbers {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $black-bold;
+}
+
+.example__name {
+  font-family: $font-add;
+  font-size: 12px;
+  color: $color-base;
+}
+
+.example__price {
+  color: $black-bold;
+}
