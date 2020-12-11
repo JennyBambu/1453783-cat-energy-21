@@ -1,0 +1,24 @@
+.button {
+  background-color: $green-base;
+  padding: 11px 44px;
+  text-decoration: none;
+  color: $color-white-base;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button--introduction {
+  position: relative;
+  margin-top: 136px;
+}
+
+.button--introduction::before {
+  display: block;
+  content: url("../img/promo-index.png");
+  position: absolute;
+  bottom: 38px;
+  left: 2px;
+}
