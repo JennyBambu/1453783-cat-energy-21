@@ -6,38 +6,57 @@
 
 .example__title {
   margin-top: 0;
-  margin-bottom: 0;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
-  color: $black-bold;
-}
+  margin-bottom: 33px;
 
-.example__slider {
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
+  @include second-title-style;
 }
 
 .example__intro {
-  margin-top: 33px;
+  margin-top: 0;
   margin-bottom: 25px;
-  font-family: $font-add;
-  color: $color-base;
+}
+
+.example__facts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__list {
+  text-align: center;
+  display: grid;
+  border: 1px solid $grey-border;
+  border-radius: 5px;
+  width: 122px;
+  position: relative;
+  margin-bottom: 23px;
+  grid-template-rows: 40px 20px;
 }
 
 .example__numbers {
-  font-size: 24px;
   text-transform: uppercase;
-  color: $black-bold;
+  margin-left: 0;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 13px 0 18px;
+
+  @include third-title-style;
 }
 
 .example__name {
-  font-family: $font-add;
   font-size: 12px;
-  color: $color-base;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 12px;
+  position: absolute;
+  bottom: -15px;
+  left: 25px;
+  background-color: $grey-additional;
 }
 
 .example__price {
   color: $black-bold;
+  font-family: $font-add;
 }

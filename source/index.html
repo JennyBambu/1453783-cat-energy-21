@@ -27,9 +27,11 @@
     </header>
 
     <main class="main">
-      <div class="introduction container">
+      <div class="introduction">
+        <div class="container">
             <h1 class="introduction__title">Функциональное питание для котов</h1>
             <p class="introduction__text">Занялся собой? Займись котом!</p>
+        </div>
       </div>
 
       <div class="container">
@@ -69,43 +71,45 @@
         </ul>
       </section>
 
-      <section class="example container">
-        <div class="example__description-wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__facts">
-            <dl class="example__list">
-              <dt class="example__name">снижение веса</dt>
-              <dd class="example__numbers">5 кг</dd>
-            </dl>
-            <dl class="example__list">
-              <dt class="example__name">затрачено времени</dt>
-              <dd class="example__numbers">60 дней</dd>
-            </dl>
-          </div>
-          <p class="example__price">Затраты на питание: <span class="example__money">15 000 руб.</span></p>
-        </div>
-
-        <div class="example__slider">
-          <div class="example__images">
-            <div class="example__image example__image--before">
-              <img src="img/before-mobile.png" width="311" height="232" alt="Фото толстого кота до питания Cat Energy">
+      <section class="example">
+        <div class="container">
+          <div class="example__description-wrapper">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__facts">
+              <dl class="example__list">
+                <dt class="example__name">снижение веса</dt>
+                <dd class="example__numbers">5 кг</dd>
+              </dl>
+              <dl class="example__list">
+                <dt class="example__name">затрачено времени</dt>
+                <dd class="example__numbers">60 дней</dd>
+              </dl>
             </div>
-
-            <div class="example__image example__image--after">
-              <img src="img/after-mobile.png" width="251" height="240" alt="Фото стройного кота после питания Cat Energy">
-            </div>
+            <p class="example__price">Затраты на питание: <span class="example__money">15 000 руб.</span></p>
           </div>
 
-          <div class="slider__control control">
-            <button class="slider__button control__button" type="button">Было</button>
-            <div class="control__scale">
-              <div class="control__bar"></div>
-              <div class="control__toggle"></div>
+          <div class="example__slider">
+            <div class="example__images">
+              <div class="example__image example__image--before">
+                <img src="img/before-mobile.png" width="311" height="232" alt="Фото толстого кота до питания Cat Energy">
+              </div>
+
+              <div class="example__image example__image--after">
+                <img src="img/after-mobile.png" width="251" height="240" alt="Фото стройного кота после питания Cat Energy">
+              </div>
             </div>
-            <button class="slider__button control__button" type="button">Стало</button>
+
+            <div class="slider__control control">
+              <button class="slider__button control__button" type="button">Было</button>
+              <div class="control__scale">
+                <div class="control__bar"></div>
+                <div class="control__toggle"></div>
+              </div>
+              <button class="slider__button control__button" type="button">Стало</button>
+            </div>
           </div>
-        </div>
+      </div>
       </section>
     </main>
 
@@ -115,30 +119,32 @@
           <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="location__address">ул. Большая Конюшенная, д. 19/8<span class="location__city"></span></p>
         </div>
-        <div class="location__map container container--no-padding">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" height="362" allowfullscreen="" frameborder="0"></iframe>
+        <div class="location__map">
+          <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" height="362" allowfullscreen="" frameborder="0"></iframe>
         </div>
     </section>
 
-      <div class="footer__bottom container">
-        <a class="logo logo--footer">
-          <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-
-        <div class="social">
-          <a class="social__link social__link--vkontakte" href="#" target="_blank">Вконтакте</a>
-          <a class="social__link social__link--instagram" href="#" target="_blank">Инстаграм</a>
-          <a class="social__link social__link--facebook" href="#" target="_blank">Фейсбук</a>
-        </div>
-
-        <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-            </svg>
+      <div class="footer__bottom">
+        <div class="container">
+          <a class="logo logo--footer">
+            <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
+
+          <div class="social">
+            <a class="social__link social__link--vkontakte" href="#" target="_blank">Вконтакте</a>
+            <a class="social__link social__link--instagram" href="#" target="_blank">Инстаграм</a>
+            <a class="social__link social__link--facebook" href="#" target="_blank">Фейсбук</a>
+          </div>
+
+          <div class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <p class="copyright__text">HTML Academy</p>
+              <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+              </svg>
+            </a>
         </div>
+      </div>
       </div>
     </footer>
   </body>

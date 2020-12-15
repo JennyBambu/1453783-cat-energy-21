@@ -3,14 +3,14 @@
   padding-bottom: 22px;
 }
 
-.location__address {
-  font-family: $font-add;
-  line-height: 20px;
-}
-
 .location__title {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  color: $black-base;
+  color: $black-add;
+  font-family: $font-add;
+}
+
+.location__iframe {
+  vertical-align: bottom;
 }

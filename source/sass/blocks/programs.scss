@@ -10,33 +10,30 @@
 }
 
 .programs__title {
-  font-size: 24px;
+  @include third-title-style;
   text-transform: uppercase;
-  font-weight: 400;
   padding-left: 70px;
-  color: $black-bold;
 }
 
 .programs__description {
-  font-family: $font-add;
   padding-bottom: 22px;
-  color: $color-base;
   border-bottom: 1px solid $grey-border;
 }
 
 .programs__item--slim {
-  background-image: url("../../img/cat-sit.svg");
+  background-image: url("../img/cat-sit.svg");
   background-repeat: no-repeat;
   background-position: 20px 20px;
 }
 
 .programs__item--pro {
-  background-image: url("../../img/cat-walk.svg");
+  background-image: url("../img/cat-walk.svg");
   background-repeat: no-repeat;
   background-position: 13px 23px;
 }
 
 .programs__link {
+  font-family: $font-add;
   text-decoration: none;
   color: $black-bold;
   font-size: 16px;

@@ -9,3 +9,17 @@
   margin-right: auto;
   width: 320px;
 }
+
+@mixin second-title-style {
+  font-weight: 400;
+  color: $black-bold;
+  font-size: 36px;
+  font-family: $font-add;
+}
+
+@mixin third-title-style {
+  font-weight: 400;
+  color: $black-bold;
+  font-size: 24px;
+  font-family: $font-add;
+}
