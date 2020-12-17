@@ -3,5 +3,5 @@
 }
 
 .main__title {
-  font-size: 36px;
+  @include second-title-style;
 }
