@@ -23,3 +23,11 @@
   font-size: 24px;
   font-family: $font-add;
 }
+
+@mixin third-title-catalog-style {
+  font-family: $font-add;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black-special;
+  text-transform: uppercase;
+}

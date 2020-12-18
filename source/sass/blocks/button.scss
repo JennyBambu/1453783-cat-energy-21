@@ -8,6 +8,8 @@
   box-sizing: border-box;
   text-transform: uppercase;
   text-align: center;
+  font-family: $font-add;
+  font-size: 16px;
 
 
   &--introduction {
@@ -25,5 +27,10 @@
 
   &--form-submit {
     border: none;
+  }
+
+  &--secondary {
+    background-color: $grey-undeground;
+    color: $color-base;
   }
 }
