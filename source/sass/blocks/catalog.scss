@@ -83,3 +83,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.catalog__present {
+  margin-top: 38px;
+  background-color: $green-base;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile.png");
+  background-position: 100px 40px, 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__present-description {
+  padding-top: 186px;
+  padding-bottom: 43px;
+  color: $color-white-base;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
+  margin: 0 auto;
+  text-align: center;
+}

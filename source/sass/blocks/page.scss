@@ -3,6 +3,8 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   font-size: 14px;
   font-weight: 400;
   font-family: $font-base;
