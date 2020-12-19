@@ -3,11 +3,13 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
   font-family: $font-base;
   color: $color-base;
   background-color: $color-white-base;
   margin: 0;
+  line-height: 1.28;
 }

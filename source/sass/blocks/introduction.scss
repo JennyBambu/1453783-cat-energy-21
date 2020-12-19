@@ -1,5 +1,6 @@
 .introduction {
-  background-image: url("../../img/backgroundcat.png");
+  background-image: url("../img/backgroundcat.png");
+  background-position: 50%;
   color: $color-white-base;
   background-repeat: no-repeat;
   text-align: center;
@@ -7,17 +8,16 @@
 }
 
 .introduction__title {
-  padding-top: 25px;
   font-weight: 400;
   font-size: 36px;
+  margin: 0 0 25px;
+  font-family: $font-add;
   line-height: 36px;
-  text-decoration: none;
-  margin: 0;
+  padding-top: 27px;
 }
 
 .introduction__text {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 164px;
+  padding-bottom: 160px;
   text-transform: uppercase;
 }

@@ -1,16 +1,27 @@
+.location {
+  background-color: $grey-base;
+}
+
+.location--index {
+  background-color: $color-white-base;
+}
+
 .location__contacts {
   padding-top: 28px;
   padding-bottom: 22px;
-}
-
-.location__address {
-  font-family: $font-add;
-  line-height: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .location__title {
   font-weight: 400;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
-  color: $black-base;
+  color: $black-add;
+  font-family: $font-add;
+}
+
+.location__iframe {
+  vertical-align: bottom;
 }

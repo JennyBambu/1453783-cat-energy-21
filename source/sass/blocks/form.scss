@@ -1,0 +1,147 @@
+.form {
+  font-size: 16px;
+  font-family: $font-add;
+}
+
+.form__group {
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 0 12px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  &--no-border {
+    border: 0;
+    margin: 0;
+  }
+}
+
+.form__group-title {
+  @include third-title-style;
+  text-transform: none;
+  margin-bottom: 14px;
+}
+
+.form__field {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &--radio {
+    padding-bottom: 12px;
+    padding-left: 45px;
+    position: relative;
+  }
+
+  &--checkbox {
+    padding-bottom: 12px;
+    padding-left: 45px;
+    position: relative;
+  }
+}
+
+.form__input {
+  margin-left: 15px;
+  width: 100%;
+  padding-top: 13px;
+  padding-left: 15px;
+  border: 1px solid $border-input;
+  padding-bottom: 12px;
+
+  &:placeholder-shown {
+    text-transform: uppercase;
+    font-family: $font-add;
+    font-size: 16px;
+  }
+
+  &--email {
+    border-color: $border-input-additional;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 60%;
+  }
+
+  &--tel {
+    border-color: $border-input-additional;
+    margin-bottom: 0;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+  }
+}
+
+.form__input-radio + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-input-additional;
+  border-radius: 50%;
+}
+
+.form__input-radio:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  bottom: 15px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $green-base;
+}
+
+.form__input-radio:focus + span::before {
+  outline: 1px solid;
+}
+
+.form__input-checkbox + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-input-additional;
+  left: 0;
+  bottom: 7px;
+}
+
+.form__input-checkbox:checked + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  left: 0;
+  bottom: 7px;
+}
+
+.form__input-checkbox:focus + span::before {
+  outline: 1px solid;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 150px;
+
+  &:placeholder-shown {
+    text-transform: uppercase;
+    font-family: $font-add;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.form__footnote {
+  font-family: $font-base;
+  font-size: 14px;
+  text-align: center;
+}
