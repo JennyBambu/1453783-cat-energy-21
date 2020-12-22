@@ -15,14 +15,14 @@
   &--introduction {
     position: relative;
     margin-top: 136px;
-  }
 
-  &--introduction::before {
-    display: block;
-    content: url("../img/promo-index.png");
-    position: absolute;
-    bottom: 38px;
-    left: 2px;
+    &::before {
+      display: block;
+      content: url("../img/promo-index.png");
+      position: absolute;
+      bottom: 38px;
+      left: 2px;
+    }
   }
 
   &--form-submit {
@@ -32,5 +32,6 @@
   &--secondary {
     background-color: $grey-undeground;
     color: $color-base;
+    margin-bottom: 25px;
   }
 }
