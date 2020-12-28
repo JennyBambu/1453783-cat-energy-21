@@ -20,6 +20,21 @@
   text-transform: uppercase;
   color: $black-add;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 124px 40px 40px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.location__address {
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px 40px 124px;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: right;
+  }
 }
 
 .location__iframe {

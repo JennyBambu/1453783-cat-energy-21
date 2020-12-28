@@ -11,17 +11,17 @@
   font-family: $font-add;
   font-size: 16px;
 
-
   &--introduction {
-    position: relative;
     margin-top: 136px;
+    position: relative;
 
-    &::before {
-      display: block;
-      content: url("../img/promo-index.png");
-      position: absolute;
-      bottom: 38px;
-      left: 2px;
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      padding: 14px 26px;
+      font-size: 20px;
+      margin-left: 90px;
+      z-index: 2;
+      margin-bottom: 526px;
     }
   }
 

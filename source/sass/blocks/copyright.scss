@@ -1,5 +1,9 @@
 .copyright {
   padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__link {
@@ -9,4 +13,10 @@
   justify-content: space-between;
   align-items: center;
   color: $color-base;
+}
+
+.copyright__text {
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

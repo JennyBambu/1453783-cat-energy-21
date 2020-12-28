@@ -2,6 +2,18 @@
   background-color: $grey-additional;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white-base;
+    border-top: 1px solid $grey-undeground;
+  }
+}
+
+.example__statistics {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -19,6 +31,10 @@
 .example__facts {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .example__list {
@@ -30,16 +46,25 @@
   position: relative;
   margin-bottom: 23px;
   grid-template-rows: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 40px 30px;
+    width: 162px;
+  }
 }
 
 .example__numbers {
+  @include third-title-style;
   text-transform: uppercase;
   margin-left: 0;
   grid-row-start: 1;
   grid-row-end: 2;
   padding: 13px 0 18px;
 
-  @include third-title-style;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 10px;
+  }
 }
 
 .example__name {
@@ -54,9 +79,37 @@
   bottom: -15px;
   left: 25px;
   background-color: $grey-additional;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    background-color: $color-white-base;
+    width: auto;
+    bottom: -5px;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      width: 127px;
+      left: 14px;
+    }
+  }
 }
 
 .example__price {
   color: $black-bold;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+  }
+}
+
+.example__slider {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-additional;
+  }
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="header container">
@@ -36,6 +37,11 @@
 
       <div class="container">
         <a class="button  button--introduction" href="form.html">Подобрать программу</a>
+      </div>
+
+
+      <div class="container">
+
         <section class="programs">
           <h2 class="visually-hidden">Наши программы функционального питания</h2>
           <article class="programs__item  programs__item--slim">
@@ -70,25 +76,27 @@
         </section>
       </div>
       <section class="example">
-        <div class="container">
-          <div class="example__description-wrapper">
+
+          <div class="example__description-wrapper container">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__facts">
-              <dl class="example__list">
-                <dt class="example__name">снижение веса</dt>
-                <dd class="example__numbers">5 кг</dd>
-              </dl>
-              <dl class="example__list">
-                <dt class="example__name">затрачено времени</dt>
-                <dd class="example__numbers">60 дней</dd>
-              </dl>
+            <div class="example__statistics">
+              <div class="example__facts">
+                <dl class="example__list">
+                  <dt class="example__name">снижение веса</dt>
+                  <dd class="example__numbers">5 кг</dd>
+                </dl>
+                <dl class="example__list">
+                  <dt class="example__name example__name--time">затрачено времени</dt>
+                  <dd class="example__numbers">60 дней</dd>
+                </dl>
+              </div>
+              <p class="example__price">Затраты на питание: <span class="example__money">15 000 руб.</span></p>
             </div>
-            <p class="example__price">Затраты на питание: <span class="example__money">15 000 руб.</span></p>
           </div>
 
           <div class="example__slider">
-            <div class="example__images">
+            <div class="example__images container">
               <div class="example__image example__image--before">
                 <img src="img/before-mobile.png" width="311" height="232" alt="Фото толстого кота до питания Cat Energy">
               </div>
@@ -98,7 +106,7 @@
               </div>
             </div>
 
-            <div class="slider__control control">
+            <div class="slider__control control container">
               <button class="slider__button control__button" type="button">Было</button>
               <div class="control__scale">
                 <div class="control__bar"></div>
@@ -107,7 +115,6 @@
               <button class="slider__button control__button" type="button">Стало</button>
             </div>
           </div>
-      </div>
       </section>
     </main>
 
@@ -115,7 +122,7 @@
       <section class="location location--index">
         <div class="location__contacts container">
           <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург<span class="location__city"></span></p>
+          <p class="location__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="location__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map">
           <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" height="362" allowfullscreen="" frameborder="0"></iframe>
@@ -123,7 +130,7 @@
     </section>
 
       <div class="footer__bottom">
-        <div class="container">
+        <div class="container footer__bottom-elements">
           <a class="logo logo--footer">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>

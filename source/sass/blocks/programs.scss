@@ -7,29 +7,59 @@
   margin-top: 20px;
   border: 1px solid $grey-border;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 277px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+  }
 }
 
 .programs__title {
   @include third-title-style;
   text-transform: uppercase;
   padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .programs__description {
   padding-bottom: 22px;
   border-bottom: 1px solid $grey-border;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 50px;
+  }
 }
 
 .programs__item--slim {
   background-image: url("../img/cat-sit.svg");
   background-repeat: no-repeat;
   background-position: 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 470px 70px;
+    background-image: url("../img/cat-sit-big.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .programs__item--pro {
   background-image: url("../img/cat-walk.svg");
   background-repeat: no-repeat;
   background-position: 13px 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 315px;
+    background-image: url("../img/cat-walk-big.svg");
+    background-repeat: no-repeat;
+    background-position: 400px 150px;
+  }
 }
 
 .programs__link {
@@ -38,4 +68,8 @@
   color: $black-bold;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

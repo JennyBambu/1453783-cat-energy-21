@@ -3,8 +3,25 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    margin-left: 70px;
+  }
+}
+
 .main-nav__item {
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 
   &::after {
     content: "";
@@ -13,6 +30,10 @@
     background-color: $grey-undeground;
     display: block;
     margin-left: calc((280px - 100vw) / 2);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -25,4 +46,9 @@
   font-family: $font-add;
   padding-bottom: 24px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+  }
 }

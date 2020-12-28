@@ -3,5 +3,12 @@
   padding-bottom: 20px;
   background-color: $grey-base;
   text-align: center;
-  display: block;
+}
+
+.footer__bottom-elements {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
