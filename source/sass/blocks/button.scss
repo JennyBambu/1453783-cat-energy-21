@@ -23,6 +23,11 @@
       z-index: 2;
       margin-bottom: 526px;
     }
+
+    @media (min-width: $decstop-width) {
+      margin-top: 0;
+      margin-bottom: 400px;
+    }
   }
 
   &--form-submit {

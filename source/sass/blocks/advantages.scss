@@ -1,12 +1,5 @@
 .advantages {
   margin-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
 }
 
 .advantages__title {
@@ -23,6 +16,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $decstop-width) {
+    display: grid;
+    grid-template-columns: 230px 246px 248px 246px;
+    grid-gap: 77px;
   }
 }
 

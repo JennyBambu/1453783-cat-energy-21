@@ -1,5 +1,10 @@
 .programs {
   padding-bottom: 34px;
+
+  @media (min-width: $decstop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -13,6 +18,11 @@
     padding-right: 277px;
     padding-bottom: 50px;
     padding-top: 70px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-right: 50px;
+    width: 39%;
   }
 }
 
@@ -47,6 +57,10 @@
     background-image: url("../img/cat-sit-big.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $decstop-width) {
+    padding-right: 50px;
+  }
 }
 
 .programs__item--pro {
@@ -59,6 +73,10 @@
     background-image: url("../img/cat-walk-big.svg");
     background-repeat: no-repeat;
     background-position: 400px 150px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-right: 50px;
   }
 }
 

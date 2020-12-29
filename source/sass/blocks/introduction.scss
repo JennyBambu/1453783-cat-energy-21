@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   text-align: center;
   background-color: $green-base;
+  font-family: $font-add;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -41,6 +42,15 @@
       left: -85px;
       top: 465px;
     }
+
+    @media (min-width: $decstop-width) {
+      background-image: url("../img/promo-index-medium.png");
+      width: 709px;
+      height: 609px;
+      left: 350px;
+      top: 100px;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -48,6 +58,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-left: 90px;
+  }
+
+  @media (min-width: $decstop-width) {
+    width: 40%;
   }
 }
 
@@ -60,5 +74,10 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 90px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-bottom: 40px;
   }
 }

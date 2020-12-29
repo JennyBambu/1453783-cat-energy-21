@@ -18,3 +18,12 @@
     line-height: 1.5;
   }
 }
+
+.page__header-wrapper {
+  @media (min-width: $decstop-width) {
+    background-image: url("../img/backgroundcat-bigger.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+  }
+}

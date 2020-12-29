@@ -1,7 +1,10 @@
 .header {
-  background-color: $color-white-base;
-
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $decstop-width) {
+    justify-content: space-between;
+    width: 89%;
   }
 }
