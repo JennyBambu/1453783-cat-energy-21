@@ -1,6 +1,5 @@
 .container {
   @include container;
-
   box-sizing: border-box;
 
   &--no-padding {
