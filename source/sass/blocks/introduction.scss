@@ -24,6 +24,11 @@
   position: relative;
   z-index: 2;
 
+  @media (min-width: $decstop-width) {
+    padding-top: 0;
+    margin: 100px 0 25px;
+  }
+
   &::before {
     content: "";
     background-image: url("../img/promo-index.png");
