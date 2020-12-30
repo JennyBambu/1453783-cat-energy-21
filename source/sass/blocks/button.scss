@@ -11,18 +11,23 @@
   font-family: $font-add;
   font-size: 16px;
 
-
   &--introduction {
-    position: relative;
     margin-top: 136px;
-  }
+    position: relative;
 
-  &--introduction::before {
-    display: block;
-    content: url("../img/promo-index.png");
-    position: absolute;
-    bottom: 38px;
-    left: 2px;
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      padding: 14px 26px;
+      font-size: 20px;
+      margin-left: 90px;
+      z-index: 2;
+      margin-bottom: 526px;
+    }
+
+    @media (min-width: $decstop-width) {
+      margin-top: 0;
+      margin-bottom: 400px;
+    }
   }
 
   &--form-submit {
@@ -32,5 +37,6 @@
   &--secondary {
     background-color: $grey-undeground;
     color: $color-base;
+    margin-bottom: 25px;
   }
 }

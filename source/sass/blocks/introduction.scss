@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
   text-align: center;
   background-color: $green-base;
+  font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    color: $black-bold;
+    text-align: left;
+  }
 }
 
 .introduction__title {
@@ -14,10 +21,68 @@
   font-family: $font-add;
   line-height: 36px;
   padding-top: 27px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $decstop-width) {
+    padding-top: 0;
+    margin: 100px 0 25px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/promo-index.png");
+    position: absolute;
+    left: 16px;
+    display: inline-block;
+    top: 170px;
+    width: 280px;
+    height: 270px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/promo-index-2.png");
+      width: 709px;
+      height: 609px;
+      left: -85px;
+      top: 465px;
+    }
+
+    @media (min-width: $decstop-width) {
+      background-image: url("../img/promo-index-medium.png");
+      width: 709px;
+      height: 609px;
+      left: 350px;
+      top: 100px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $decstop-width) {
+    width: 40%;
+  }
 }
 
 .introduction__text {
   margin: 0;
   padding-bottom: 160px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-bottom: 40px;
+  }
 }

@@ -1,5 +1,9 @@
 .location {
   background-color: $grey-base;
+
+  @media (min-width: $decstop-width) {
+    position: relative;
+  }
 }
 
 .location--index {
@@ -11,6 +15,15 @@
   padding-bottom: 22px;
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @media (min-width: $decstop-width) {
+    position: absolute;
+    left: 95px;
+    top: 110px;
+    background-color: $color-white-base;
+    width: 570px;
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .location__title {
@@ -20,8 +33,37 @@
   text-transform: uppercase;
   color: $black-add;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 124px 40px 40px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding: 30px 30px 20px 46px;
+  }
+}
+
+.location__address {
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px 40px 124px;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: right;
+  }
+
+  @media (min-width: $decstop-width) {
+    text-align: left;
+    padding: 30px 20px 20px 40px;
+  }
 }
 
 .location__iframe {
   vertical-align: bottom;
+  height: 320px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

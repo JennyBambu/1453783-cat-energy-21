@@ -2,6 +2,45 @@
   background-color: $grey-additional;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($color-white-base 65%, $grey-base 60%);
+    border-top: 1px solid $grey-undeground;
+  }
+
+  @media (min-width: $decstop-width) {
+    border-top: none;
+    background: linear-gradient($color-white-base 35%, $grey-base 35%);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $decstop-width) {
+    display: flex;
+  }
+}
+
+.example__description-wrapper {
+  @media (min-width: $decstop-width) {
+    width: 50%;
+  }
+}
+
+.example__slider {
+  @media (min-width: $decstop-width) {
+    width: 50%;
+  }
+}
+
+.example__statistics {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $decstop-width) {
+    display: block;
+  }
 }
 
 .example__title {
@@ -9,16 +48,32 @@
   margin-bottom: 33px;
 
   @include second-title-style;
+
+  @media (min-width: $decstop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__intro {
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $decstop-width) {
+    width: 73%;
+  }
 }
 
 .example__facts {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 61%;
+  }
 }
 
 .example__list {
@@ -30,16 +85,25 @@
   position: relative;
   margin-bottom: 23px;
   grid-template-rows: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 40px 30px;
+    width: 162px;
+  }
 }
 
 .example__numbers {
+  @include third-title-style;
   text-transform: uppercase;
   margin-left: 0;
   grid-row-start: 1;
   grid-row-end: 2;
   padding: 13px 0 18px;
 
-  @include third-title-style;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 10px;
+  }
 }
 
 .example__name {
@@ -54,9 +118,47 @@
   bottom: -15px;
   left: 25px;
   background-color: $grey-additional;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    background-color: $color-white-base;
+    width: auto;
+    bottom: -5px;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      width: 127px;
+      left: 14px;
+    }
+  }
+
+  @media (min-width: $decstop-width) {
+    background-color: $grey-base;
+  }
 }
 
 .example__price {
   color: $black-bold;
   font-family: $font-add;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+  }
+
+  @media (min-width: $decstop-width) {
+    width: auto;
+    text-align: left;
+  }
+}
+
+.example__money {
+  @media (min-width: $decstop-width) {
+    margin-left: 59px;
+  }
 }

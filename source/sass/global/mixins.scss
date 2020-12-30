@@ -8,6 +8,20 @@
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $decstop-width) {
+    width: 1280px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @mixin second-title-style {
@@ -15,6 +29,10 @@
   color: $black-bold;
   font-size: 36px;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 @mixin third-title-style {
@@ -22,6 +40,10 @@
   color: $black-bold;
   font-size: 24px;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 }
 
 @mixin third-title-catalog-style {

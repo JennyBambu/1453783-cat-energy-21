@@ -1,7 +1,15 @@
 .catalog__item {
-  border-bottom: 1px solid $grey-undeground;
   padding-bottom: 30px;
   font-size: 12px;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-undeground;
+    display: block;
+    margin-left: calc((280px - 100vw) / 2);
+  }
 }
 
 .catalog__item-wrapper {
@@ -44,14 +52,31 @@
 }
 
 .catalog__all {
-  padding-top: 75px;
   padding-bottom: 25px;
   text-align: center;
-  border-bottom: 1px solid $grey-undeground;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-undeground;
+    display: block;
+    margin-left: calc((280px - 100vw) / 2);
+  }
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: $grey-undeground;
+    display: block;
+    margin-left: calc((280px - 100vw) / 2);
+  }
 }
 
 .catalog__all-title {
   @include third-title-catalog-style;
+  padding-top: 75px;
   margin: 0;
 }
 
@@ -88,7 +113,7 @@
   margin-top: 38px;
   margin-bottom: 35px;
   background-color: $green-base;
-  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile.png");
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo.png");
   background-position: 100px 40px, 0;
   background-repeat: no-repeat;
 }
