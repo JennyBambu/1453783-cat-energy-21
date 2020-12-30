@@ -52,7 +52,9 @@
     font-size: 18px;
   }
 
-  @media (min-width: $decstop-width) {
-    color: $color-white-base;
+  &--index {
+    @media (min-width: $decstop-width) {
+      color: $color-white-base;
+    }
   }
 }

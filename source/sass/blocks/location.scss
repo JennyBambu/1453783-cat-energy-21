@@ -1,13 +1,13 @@
 .location {
   background-color: $grey-base;
-}
-
-.location--index {
-  background-color: $color-white-base;
 
   @media (min-width: $decstop-width) {
     position: relative;
   }
+}
+
+.location--index {
+  background-color: $color-white-base;
 }
 
 .location__contacts {

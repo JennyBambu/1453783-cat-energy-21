@@ -18,21 +18,23 @@
     line-height: 1.5;
   }
 
-  @media (min-width: $decstop-width) {
-    &::before {
-      content: "";
-      background-color: $green-base;
-      position: absolute;
-      right: 0;
-      display: inline-block;
-      top: 0;
-      width: 50%;
-      height: 694px;
-      z-index: -1;
-      background-repeat: no-repeat;
-      background-size: auto 697px;
-      background-position-x: right;
-      background-image: url("../img/backgroundcat-bigger.png");
+  &--index {
+    @media (min-width: $decstop-width) {
+      &::before {
+        content: "";
+        background-color: $green-base;
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        top: 0;
+        width: 50%;
+        height: 694px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: auto 697px;
+        background-position-x: right;
+        background-image: url("../img/backgroundcat-bigger.png");
+      }
     }
   }
 }
