@@ -23,6 +23,7 @@
   @media (min-width: $decstop-width) {
     padding-right: 50px;
     width: 39%;
+    padding-top: 41px;
   }
 }
 
@@ -34,6 +35,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-left: 164px;
+    margin-bottom: 50px;
   }
 }
 
@@ -60,6 +66,8 @@
 
   @media (min-width: $decstop-width) {
     padding-right: 50px;
+    background-position: 52px 41px;
+    background-size: 100px 106px;
   }
 }
 
@@ -77,6 +85,8 @@
 
   @media (min-width: $decstop-width) {
     padding-right: 50px;
+    background-position: 33px 47px;
+    background-size: 134px 100px;
   }
 }
 

@@ -17,13 +17,22 @@
     font-size: 16px;
     line-height: 1.5;
   }
-}
 
-.page__header-wrapper {
   @media (min-width: $decstop-width) {
-    background-image: url("../img/backgroundcat-bigger.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 720px 694px;
+    &::before {
+      content: "";
+      background-color: $green-base;
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      top: 0;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: auto 697px;
+      background-position-x: right;
+      background-image: url("../img/backgroundcat-bigger.png");
+    }
   }
 }

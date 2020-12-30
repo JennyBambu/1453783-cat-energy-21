@@ -5,6 +5,10 @@
 
   @media (min-width: $decstop-width) {
     justify-content: space-between;
-    width: 89%;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $decstop-width) {
+    padding-top: 42px;
   }
 }
