@@ -1,3 +1,11 @@
+.matching {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+
 .matching__intro {
   font-family: $font-add;
   margin-bottom: 25px;

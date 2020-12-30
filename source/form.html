@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="header container">
@@ -27,7 +28,7 @@
     </header>
 
     <main class="main container">
-      <h1 class="main__title">Подбор программы</h1>
+      <h1 class="main__title main__title--form">Подбор программы</h1>
       <section class="matching">
         <h2 class="visually-hidden">Анкета для подбора питания</h2>
         <p class="matching__intro">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
@@ -68,16 +69,26 @@
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
-          <fieldset class="form__group form__group--no-border">
+          <fieldset class="form__group form__group--checkbox form__group--no-border">
             <legend class="form__group-title">Дополнительно</legend>
-              <input class="visually-hidden form__input-checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label class="form__field form__field--checkbox" for="sweetener">Сахарозаменитель</label>
-              <input class="visually-hidden form__input-checkbox" id="water" type="checkbox" name="water">
-              <label class="form__field form__field--checkbox" for="water">Питьевая вода</label>
-              <input class="visually-hidden form__input-checkbox" id="milk" type="checkbox" name="milk">
-              <label class="form__field form__field--checkbox" for="milk">Молоко</label>
-              <input class="visually-hidden form__input-checkbox" id="vitamins" type="checkbox" name="vitamins">
-              <label class="form__field form__field--checkbox" for="vitamins">Витамины</label>
+            <div class="form__group-checkbox-wrapper">
+              <div class="form__group-input-wrapper">
+                <input class="visually-hidden form__input-checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+                <label class="form__field form__field--checkbox" for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="form__group-input-wrapper">
+                <input class="visually-hidden form__input-checkbox" id="water" type="checkbox" name="water">
+                <label class="form__field form__field--checkbox" for="water">Питьевая вода</label>
+              </div>
+              <div class="form__group-input-wrapper">
+                <input class="visually-hidden form__input-checkbox" id="milk" type="checkbox" name="milk">
+                <label class="form__field form__field--checkbox" for="milk">Молоко</label>
+              </div>
+              <div class="form__group-input-wrapper">
+                <input class="visually-hidden form__input-checkbox" id="vitamins" type="checkbox" name="vitamins">
+                <label class="form__field form__field--checkbox" for="vitamins">Витамины</label>
+              </div>
+            </div>
           </fieldset>
 
           <div class="form__finish">
@@ -88,18 +99,18 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="location">
-        <div class="location__contacts container">
-          <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург<span class="location__city"></span></p>
+      <section class="location location--form">
+        <div class="location__contacts location__contacts--form container">
+          <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <p class="location__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="location__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map">
-          <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" height="362" allowfullscreen="" frameborder="0"></iframe>
+          <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" allowfullscreen="" frameborder="0"></iframe>
         </div>
     </section>
 
       <div class="footer__bottom">
-        <div class="container">
+        <div class="container footer__bottom-elements">
           <a class="logo logo--footer">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>

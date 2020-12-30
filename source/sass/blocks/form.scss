@@ -1,6 +1,10 @@
 .form {
   font-size: 16px;
   font-family: $font-add;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__group {
@@ -13,6 +17,11 @@
   margin-bottom: 12px;
 
   &--radio {
+    @media (min-width: $tablet-width) {
+      border: 1px solid $border-input;
+      padding: 35px 0 12px;
+    }
+
     &::after {
       content: "";
       width: 100vw;
@@ -20,6 +29,10 @@
       background-color: $grey-undeground;
       display: block;
       margin-left: calc((280px - 100vw) / 2);
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
 
     &::before {
@@ -30,12 +43,30 @@
       display: block;
       margin-left: calc((280px - 100vw) / 2);
       margin-bottom: 25px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
   }
 
   &--no-border {
     border: 0;
     margin: 0;
+  }
+}
+
+
+.form__group-checkbox-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group-input-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 286px;
   }
 }
 
@@ -55,6 +86,10 @@
     padding-bottom: 12px;
     padding-left: 45px;
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 88px;
+    }
   }
 
   &--checkbox {
@@ -105,6 +140,11 @@
   height: 30px;
   border: 1px solid $border-input-additional;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+    bottom: 10px;
+  }
 }
 
 .form__input-radio:checked + label::after {
@@ -117,6 +157,11 @@
   height: 13px;
   border-radius: 50%;
   background-color: $green-base;
+
+  @media (min-width: $tablet-width) {
+    left: 34px;
+    bottom: 19px;
+  }
 }
 
 .form__input-radio:focus + label::before {
@@ -158,8 +203,20 @@
   padding-left: 15px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
+
   &::placeholder {
     color: $color-base;
+  }
+}
+
+.form__finish {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-bottom: 50px;
   }
 }
 
