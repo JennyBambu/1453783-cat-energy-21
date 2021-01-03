@@ -8,7 +8,7 @@
 }
 
 .form__fieldset-group {
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -31,7 +31,7 @@
       margin-bottom: 0;
     }
 
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       @include width-form-items;
     }
   }
@@ -43,7 +43,7 @@
       padding-left: 35px;
     }
 
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       @include width-form-items;
       box-sizing: border-box;
     }
@@ -78,7 +78,7 @@
 }
 
 .form__fieldset-wrapper {
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@
   margin-bottom: 15px;
 
   &--contacts {
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       @include width-form-items;
     }
   }
@@ -233,6 +233,7 @@
   font-size: 16px;
   padding-left: 15px;
   box-sizing: border-box;
+  border-color: $border-input;
 
   @media (min-width: $tablet-width) {
     height: 174px;

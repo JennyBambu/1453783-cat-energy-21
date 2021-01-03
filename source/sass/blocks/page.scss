@@ -19,7 +19,7 @@
   }
 
   &--index {
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       &::before {
         content: "";
         background-color: $green-base;
