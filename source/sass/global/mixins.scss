@@ -53,3 +53,7 @@
   color: $black-special;
   text-transform: uppercase;
 }
+
+@mixin width-form-items {
+  width: calc((100% - 80px) / 2);
+}

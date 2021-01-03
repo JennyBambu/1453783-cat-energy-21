@@ -8,7 +8,7 @@
   }
 
   &--form {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $decstop-width) {
       padding-left: 40px;
     }
   }

@@ -33,43 +33,46 @@
         <h2 class="visually-hidden">Анкета для подбора питания</h2>
         <p class="matching__intro">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="form__fieldset-group">
+            <fieldset class="form__group form__group--information">
+              <label class="form__field">Имя:<sup>*</sup>
+                <input class="form__input" type="text" name="name" placeholder="Барсик">
+              </label>
+              <label class="form__field">Вес(кг):<sup>*</sup>
+                <input class="form__input" type="text" name="weight" placeholder="7">
+              </label>
+              <label class="form__field">Возраст (лет):
+                <input class="form__input" type="text" name="age" placeholder="7">
+              </label>
+            </fieldset>
+
+            <fieldset class="form__group form__group--radio">
+              <input class="visually-hidden form__input-radio" id="sliming" type="radio" name="variant" value="sliming" checked>
+              <label class="form__field form__field--radio" for="sliming">Похудение</label>
+              <input class="visually-hidden form__input-radio" id="gain" type="radio" name="variant" value="gain">
+              <label class="form__field form__field--radio" for="gain">Набор массы</label>
+              <input class="visually-hidden form__input-radio" id="advice" type="radio" name="variant" value="advice">
+              <label class="form__field form__field--radio" for="advice">Не знаю (нужен ваш совет)</label>
+            </fieldset>
+          </div>
           <fieldset class="form__group">
-            <label class="form__field">Имя:<sup>*</sup>
-              <input class="form__input" type="text" name="name" placeholder="Барсик">
-            </label>
-            <label class="form__field">Вес(кг):<sup>*</sup>
-              <input class="form__input" type="text" name="weight" placeholder="7">
-            </label>
-            <label class="form__field">Возраст (лет):
-              <input class="form__input" type="text" name="age" placeholder="7">
-            </label>
-          </fieldset>
-
-          <fieldset class="form__group form__group--radio">
-            <input class="visually-hidden form__input-radio" id="sliming" type="radio" name="variant" value="sliming" checked>
-            <label class="form__field form__field--radio" for="sliming">Похудение</label>
-            <input class="visually-hidden form__input-radio" id="gain" type="radio" name="variant" value="gain">
-            <label class="form__field form__field--radio" for="gain">Набор массы</label>
-            <input class="visually-hidden form__input-radio" id="advice" type="radio" name="variant" value="advice">
-            <label class="form__field form__field--radio" for="advice">Не знаю (нужен ваш совет)</label>
-          </fieldset>
-
-          <fieldset class="form__group form__group--no-border">
             <legend class="form__group-title">Контактные данные (владельца кота)</legend>
-            <label class="form__field">E-mail:<sup>*</sup>
-              <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </label>
-            <label class="form__field">Телефон:<sup>*</sup>
-              <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3}">
-            </label>
+            <div class="form__fieldset-wrapper">
+              <label class="form__field form__field--contacts">E-mail:<sup>*</sup>
+                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="form__field form__field--contacts">Телефон:<sup>*</sup>
+                <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3}">
+              </label>
+          </div>
           </fieldset>
 
-          <fieldset class="form__group form__group--no-border">
+          <fieldset class="form__group">
             <legend class="form__group-title">Комментарий</legend>
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
-          <fieldset class="form__group form__group--checkbox form__group--no-border">
+          <fieldset class="form__group form__group--checkbox">
             <legend class="form__group-title">Дополнительно</legend>
             <div class="form__group-checkbox-wrapper">
               <div class="form__group-input-wrapper">

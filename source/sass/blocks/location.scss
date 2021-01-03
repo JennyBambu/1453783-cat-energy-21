@@ -4,10 +4,16 @@
   @media (min-width: $decstop-width) {
     position: relative;
   }
-}
 
-.location--index {
-  background-color: $color-white-base;
+  &--index {
+    background-color: $color-white-base;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      background-color: $grey-base;
+    }
+  }
 }
 
 .location__contacts {
@@ -23,12 +29,6 @@
     background-color: $color-white-base;
     width: 570px;
     grid-template-columns: 50% 50%;
-  }
-
-  &--form {
-    @media (min-width: $tablet-width) {
-      background-color: $grey-base;
-    }
   }
 }
 
