@@ -22,7 +22,7 @@
     @media (min-width: $desktop-width) {
       &::before {
         content: "";
-        background-color: $green-base;
+        background-color: $green-additional;
         position: absolute;
         right: 0;
         display: inline-block;

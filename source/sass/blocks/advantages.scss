@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: section;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,37 +34,18 @@
     padding: 140px 30px 60px 0;
     width: 245px;
     margin-bottom: 40px;
+    position: relative;
   }
 
-  &--nutrients {
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/1.png");
-      background-repeat: no-repeat;
-      background-position: 60% 70%;
-    }
-  }
-
-  &--cooking {
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/2.png");
-      background-repeat: no-repeat;
-      background-position: 75% 50%;
-    }
-  }
-
-  &--meal {
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/3.png");
-      background-repeat: no-repeat;
-      background-position: 70% 60%;
-    }
-  }
-
-  &--time {
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/4.png");
-      background-repeat: no-repeat;
-      background-position: 70% 50%;
-    }
+  &::before {
+    counter-increment: section;
+    content: counters(section, ".");
+    font-size: 280px;
+    font-family: "Oswald", "Verdana", sans-serif;
+    color: $grey-base;
+    position: absolute;
+    top: -80px;
+    right: 40px;
+    z-index: -1;
   }
 }
