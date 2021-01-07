@@ -1,6 +1,30 @@
+.catalog {
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 140px 65px;
+    font-size: 16px;
+  }
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-top: 68px;
+    }
+  }
+}
+
 .catalog__item {
   padding-bottom: 30px;
-  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-base;
+    padding: 0 40px 40px;
+    position: relative;
+  }
 
   &::before {
     content: "";
@@ -9,18 +33,31 @@
     background-color: $grey-undeground;
     display: block;
     margin-left: calc((280px - 100vw) / 2);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .catalog__item-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .catalog__item-title {
   @include third-title-catalog-style;
   width: 100px;
-  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    margin: 0 auto 8px;
+    text-align: center;
+  }
 }
 
 .catalog__item-link {
@@ -29,22 +66,51 @@
   color: $black-special;
 }
 
-.catalog__image {
+.catalog__image-link {
   margin: auto;
+}
+
+.catalog__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: auto;
+    top: -60px;
+    left: 113px;
+  }
 }
 
 .catalog__item-description {
   padding-bottom: 20px;
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 161px;
+    padding-bottom: 33px;
+  }
 }
 
 .catalog__table {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-collapse: collapse;
+  }
+}
+
+.catalog__table-row {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-input-additional;
+  }
 }
 
 .catalog__table-th {
   text-align: left;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0 7px;
+  }
 }
 
 .catalog__table-td {
@@ -55,6 +121,11 @@
   padding-bottom: 25px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    border: 2px solid $grey-base;
+    padding: 0 40px 40px;
+  }
+
   &::after {
     content: "";
     width: 100vw;
@@ -62,6 +133,10 @@
     background-color: $grey-undeground;
     display: block;
     margin-left: calc((280px - 100vw) / 2);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::before {
@@ -71,6 +146,10 @@
     background-color: $grey-undeground;
     display: block;
     margin-left: calc((280px - 100vw) / 2);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -78,16 +157,33 @@
   @include third-title-catalog-style;
   padding-top: 75px;
   margin: 0;
+  color: $black-add;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 0 auto 26px;
+    padding-top: 161px;
+  }
 }
 
 .catalog__all-text {
-  font-size: 12px;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 18px;
+    width: 228px;
+    margin: 0 auto 96px;
+  }
 }
 
 .catalog__title {
   @include third-title-style;
   margin-top: 25px;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .catalog__list {
@@ -98,6 +194,15 @@
 .catalog__list-item {
   border-bottom: 1px solid $border-input-additional;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border: 1px solid $border-input-additional;
+    padding: 0 36px 25px;
+  }
 }
 
 .catalog__list-item-title {
@@ -116,6 +221,11 @@
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo.png");
   background-position: 100px 40px, 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-long.png");
+    background-position: 79px 56px, 0;
+  }
 }
 
 .catalog__present-description {
@@ -127,4 +237,11 @@
   width: 161px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: start;
+    margin-right: 70px;
+  }
 }

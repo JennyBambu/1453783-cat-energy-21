@@ -39,5 +39,9 @@
     background-color: $grey-undeground;
     color: $color-base;
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
