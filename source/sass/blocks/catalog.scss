@@ -4,9 +4,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 120px;
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 324px);
     gap: 140px 65px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    grid-gap: 143px 80px;
   }
 
   &--additional {
@@ -24,6 +29,10 @@
     background-color: $grey-base;
     padding: 0 40px 40px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 39px 40px;
   }
 
   &::before {
@@ -126,6 +135,10 @@
     padding: 0 40px 40px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 37px 40px 35px;
+  }
+
   &::after {
     content: "";
     width: 100vw;
@@ -171,7 +184,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
-    width: 228px;
+    width: 170px;
     margin: 0 auto 96px;
   }
 }
