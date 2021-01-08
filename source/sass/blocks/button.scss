@@ -22,9 +22,10 @@
       margin-left: 90px;
       z-index: 2;
       margin-bottom: 526px;
+      margin-top: 70px;
     }
 
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       margin-top: 0;
       margin-bottom: 400px;
     }
@@ -38,5 +39,10 @@
     background-color: $grey-undeground;
     color: $color-base;
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding: 11px 39px;
+    }
   }
 }

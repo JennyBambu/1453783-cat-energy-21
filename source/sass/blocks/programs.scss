@@ -1,7 +1,7 @@
 .programs {
   padding-bottom: 34px;
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -10,7 +10,6 @@
 .programs__item {
   background-color: $grey-base;
   margin-top: 20px;
-  border: 1px solid $grey-border;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -20,10 +19,47 @@
     padding-top: 70px;
   }
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 50px;
     width: 39%;
     padding-top: 41px;
+  }
+
+  &--slim {
+    background-image: url("../img/cat-sit.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 470px 70px;
+      background-image: url("../img/cat-sit-big.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 50px;
+      background-position: 52px 41px;
+      background-size: 100px 106px;
+    }
+  }
+
+  &--pro {
+    background-image: url("../img/cat-walk.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 315px;
+      background-image: url("../img/cat-walk-big.svg");
+      background-repeat: no-repeat;
+      background-position: 400px 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 50px;
+      background-position: 33px 47px;
+      background-size: 134px 100px;
+    }
   }
 }
 
@@ -37,7 +73,7 @@
     margin-bottom: 25px;
   }
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 164px;
     margin-bottom: 50px;
   }
@@ -50,43 +86,6 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-bottom: 50px;
-  }
-}
-
-.programs__item--slim {
-  background-image: url("../img/cat-sit.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 20px;
-
-  @media (min-width: $tablet-width) {
-    background-position: 470px 70px;
-    background-image: url("../img/cat-sit-big.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $decstop-width) {
-    padding-right: 50px;
-    background-position: 52px 41px;
-    background-size: 100px 106px;
-  }
-}
-
-.programs__item--pro {
-  background-image: url("../img/cat-walk.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 23px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 315px;
-    background-image: url("../img/cat-walk-big.svg");
-    background-repeat: no-repeat;
-    background-position: 400px 150px;
-  }
-
-  @media (min-width: $decstop-width) {
-    padding-right: 50px;
-    background-position: 33px 47px;
-    background-size: 134px 100px;
   }
 }
 

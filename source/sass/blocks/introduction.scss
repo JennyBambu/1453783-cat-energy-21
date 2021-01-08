@@ -1,4 +1,4 @@
-.introduction {
+.introduction__text-wrapper {
   background-image: url("../img/backgroundcat.png");
   background-position: 50%;
   color: $color-white-base;
@@ -12,7 +12,19 @@
     color: $black-bold;
     text-align: left;
   }
+
+  &:first-child::after {
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/promo-index-medium.png");
+      width: 709px;
+      height: 609px;
+      left: 350px;
+      top: 100px;
+      background-repeat: no-repeat;
+    }
+  }
 }
+
 
 .introduction__title {
   font-weight: 400;
@@ -24,38 +36,9 @@
   position: relative;
   z-index: 2;
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 0;
     margin: 100px 0 25px;
-  }
-
-  &::before {
-    content: "";
-    background-image: url("../img/promo-index.png");
-    position: absolute;
-    left: 16px;
-    display: inline-block;
-    top: 170px;
-    width: 280px;
-    height: 270px;
-    z-index: 1;
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/promo-index-2.png");
-      width: 709px;
-      height: 609px;
-      left: -85px;
-      top: 465px;
-    }
-
-    @media (min-width: $decstop-width) {
-      background-image: url("../img/promo-index-medium.png");
-      width: 709px;
-      height: 609px;
-      left: 350px;
-      top: 100px;
-      background-repeat: no-repeat;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -65,7 +48,7 @@
     margin-left: 90px;
   }
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     width: 40%;
   }
 }
@@ -80,9 +63,39 @@
   @media (min-width: $tablet-width) {
     margin-left: 90px;
     font-size: 20px;
+    padding-bottom: 0;
   }
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 40px;
+  }
+}
+
+.introduction__button-wrapper {
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    background-image: url("../img/promo-index.png");
+    position: absolute;
+    left: 22px;
+    display: inline-block;
+    bottom: 40px;
+    width: 280px;
+    height: 270px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/promo-index-2.png");
+      width: 709px;
+      height: 609px;
+      left: 34px;
+      top: -25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }

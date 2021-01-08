@@ -17,7 +17,7 @@
     padding-right: 30px;
   }
 
-  @media (min-width: $decstop-width) {
+  @media (min-width: $desktop-width) {
     width: 1280px;
     padding-left: 30px;
     padding-right: 30px;
@@ -52,4 +52,13 @@
   font-weight: 400;
   color: $black-special;
   text-transform: uppercase;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+@mixin width-form-items {
+  width: calc((100% - 80px) / 2);
 }

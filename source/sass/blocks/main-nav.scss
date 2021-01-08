@@ -1,18 +1,25 @@
 .main-nav__list {
   @include lists-base;
   text-align: center;
-}
+  position: relative;
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin-left: 70px;
+  }
+
+  &--index::after {
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/promo-index-medium.png");
+      width: 709px;
+      height: 609px;
+      left: -340px;
+      top: 100px;
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      content: "";
+    }
   }
 }
 
@@ -53,8 +60,14 @@
   }
 
   &--index {
-    @media (min-width: $decstop-width) {
+    @media (min-width: $desktop-width) {
       color: $color-white-base;
     }
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

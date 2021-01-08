@@ -1,4 +1,18 @@
+.matching {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+
 .matching__intro {
   font-family: $font-add;
   margin-bottom: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
