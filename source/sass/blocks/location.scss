@@ -8,12 +8,6 @@
   &--index {
     background-color: $color-white-base;
   }
-
-  &--form {
-    @media (min-width: $tablet-width) {
-      background-color: $grey-base;
-    }
-  }
 }
 
 .location__contacts {
@@ -53,15 +47,22 @@
 
 .location__address {
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 40px 124px;
-    font-size: 20px;
-    line-height: 21px;
+    padding: 60px 40px 40px 117px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
     padding: 30px 20px 20px 40px;
+  }
+}
+
+.location__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 19px;
   }
 }
 
