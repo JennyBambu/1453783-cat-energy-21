@@ -9,7 +9,11 @@
   <body class="page__body page__body--index">
     <header class="header container">
       <a class="logo logo--header">
-        <img src="img/main-logo.svg" width="191" height="66" alt="Логотип сайта Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
+          <img src="img/main-logo.svg" alt="Логотип сайта Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -97,8 +101,15 @@
 
           <div class="example__slider">
             <div class="example__images">
-              <img class="example__image example__image--before" src="img/before-mobile.png" width="311" height="232" alt="Фото толстого кота до питания Cat Energy">
-              <img class="example__image example__image--after" src="img/after-mobile.png" width="251" height="240" alt="Фото стройного кота после питания Cat Energy">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                <img class="example__image example__image--before" src="img/before-mobile.png" alt="Фото толстого кота до питания Cat Energy">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                <img class="example__image example__image--after" src="img/after-mobile.png" alt="Фото стройного кота после питания Cat Energy">
+            </picture>
             </div>
 
             <div class="example__control control">

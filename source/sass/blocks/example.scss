@@ -140,6 +140,28 @@
   }
 }
 
+.example__image {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  &--before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      clip-path: inset(0 46% 0 0);
+    }
+  }
+
+  &--after {
+    @media (min-width: $tablet-width) {
+      margin-left: 102px;
+      clip-path: inset(0 0 0 48%);
+    }
+  }
+}
+
 .example__price {
   color: $black-bold;
   font-family: $font-add;
