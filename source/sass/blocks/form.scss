@@ -103,9 +103,31 @@
   @include third-title-style;
   text-transform: none;
   margin-bottom: 30px;
+  margin-right: 79px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+  }
+
+  &--decorated {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 150vw;
+      background-color: $green-base;
+      position: absolute;
+      left: 0;
+      top: 20px;
+      z-index: -1;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        left: calc(50% - 50vw);
+      }
+    }
   }
 }
 
@@ -258,4 +280,14 @@
   font-family: $font-base;
   font-size: 14px;
   text-align: center;
+}
+
+.form__group-title-text {
+  display: inline-block;
+  background-color: white;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
 }

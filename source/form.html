@@ -9,7 +9,11 @@
   <body class="page__body">
     <header class="header container">
       <a class="logo logo--header" href="index.html">
-        <img src="img/main-logo.svg" width="191" height="66" alt="Логотип сайта Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
+          <img src="img/main-logo.svg" alt="Логотип сайта Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -27,10 +31,9 @@
       </nav>
     </header>
 
-    <main class="main container">
-      <h1 class="main__title main__title--form">Подбор программы</h1>
-      <section class="matching">
-        <h2 class="visually-hidden">Анкета для подбора питания</h2>
+    <main class="main">
+      <section class="matching container">
+        <h1 class="matching__title">Подбор программы</h1>
         <p class="matching__intro">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <div class="form__fieldset-group">
@@ -56,7 +59,7 @@
             </fieldset>
           </div>
           <fieldset class="form__group">
-            <legend class="form__group-title">Контактные данные (владельца кота)</legend>
+            <legend class="form__group-title form__group-title--decorated"><span class="form__group-title-text">Контактные данные (владельца кота)</span></legend>
             <div class="form__fieldset-wrapper">
               <label class="form__field form__field--contacts">E-mail:<sup>*</sup>
                 <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
@@ -68,12 +71,12 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__group-title">Комментарий</legend>
+            <legend class="form__group-title form__group-title--decorated"><span class="form__group-title-text">Комментарий</span></legend>
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__group form__group--checkbox">
-            <legend class="form__group-title">Дополнительно</legend>
+            <legend class="form__group-title form__group-title--decorated"><span class="form__group-title-text">Дополнительно</span></legend>
             <div class="form__group-checkbox-wrapper">
               <div class="form__group-input-wrapper">
                 <input class="visually-hidden form__input-checkbox" id="sweetener" type="checkbox" name="sweetener" checked>

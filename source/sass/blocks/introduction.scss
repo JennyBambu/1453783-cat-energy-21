@@ -4,7 +4,7 @@
   color: $color-white-base;
   background-repeat: no-repeat;
   text-align: center;
-  background-color: $green-base;
+  background-color: $green-background;
   font-family: $font-add;
 
   @media (min-resolution: 2dppx) {
@@ -29,7 +29,6 @@
     }
   }
 }
-
 
 .introduction__title {
   font-weight: 400;
