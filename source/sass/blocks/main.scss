@@ -1,5 +1,7 @@
 .main {
-  overflow-x: hidden;
+  &--form {
+    overflow-x: hidden;
+  }
 }
 
 .main__title {
