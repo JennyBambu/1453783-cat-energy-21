@@ -34,6 +34,10 @@
         background-size: auto 697px;
         background-position-x: right;
         background-image: url("../img/backgroundcat-bigger.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/backgroundcat-bigger@2x.png");
+        }
       }
     }
   }

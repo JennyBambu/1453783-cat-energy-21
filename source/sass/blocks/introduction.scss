@@ -4,8 +4,13 @@
   color: $color-white-base;
   background-repeat: no-repeat;
   text-align: center;
-  background-color: $green-base;
+  background-color: $green-background;
   font-family: $font-add;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgroundcat@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -24,7 +29,6 @@
     }
   }
 }
-
 
 .introduction__title {
   font-weight: 400;
@@ -86,12 +90,22 @@
     height: 270px;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-index@2x.png");
+      background-size: 296px auto;
+    }
+
     @media (min-width: $tablet-width) {
-      background-image: url("../img/promo-index-2.png");
+      background-image: url("../img/promo-index-big.png");
       width: 709px;
       height: 609px;
       left: 34px;
       top: -25px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-index-big@2x.png");
+        background-size: 709px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {

@@ -6,6 +6,10 @@
   }
 }
 
+.matching__title {
+  @include second-title-style;
+}
+
 .matching__intro {
   font-family: $font-add;
   margin-bottom: 25px;

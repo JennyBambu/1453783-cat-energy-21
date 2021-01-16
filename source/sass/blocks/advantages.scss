@@ -29,12 +29,32 @@
 .advantages__item {
   padding-bottom: 24px;
   padding-left: 80px;
+  background-repeat: no-repeat;
+
+
+  &--nutrients {
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--cooking {
+    background-image: url("../img/icon-water.svg");
+  }
+
+  &--meal {
+    background-image: url("../img/icon-meal.svg");
+  }
+
+  &--time {
+    background-image: url("../img/icon-clock.svg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 140px 30px 60px 0;
     width: 245px;
     margin-bottom: 40px;
     position: relative;
+    background-size: 80px 80px;
+    background-position: 0 30px;
 
     &::before {
       counter-increment: section;

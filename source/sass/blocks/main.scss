@@ -1,3 +1,9 @@
+.main {
+  &--form {
+    overflow-x: hidden;
+  }
+}
+
 .main__title {
   @include second-title-style;
 
@@ -5,11 +11,5 @@
     margin-top: 27px;
     padding-bottom: 40px;
     margin-bottom: 0;
-  }
-
-  &--form {
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      padding-left: 40px;
-    }
   }
 }
