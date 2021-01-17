@@ -1,8 +1,27 @@
 .social {
   padding: 20px;
   border-bottom: 1px solid $grey-border;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+  fill: $grey-icon;
+  margin-right: 22px;
+
+  &:hover {
+    fill: $green-base;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
