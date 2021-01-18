@@ -13,6 +13,15 @@
   justify-content: space-between;
   align-items: center;
   color: $color-base;
+  fill: $grey-icon;
+
+  &:hover {
+    fill: $green-base;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
