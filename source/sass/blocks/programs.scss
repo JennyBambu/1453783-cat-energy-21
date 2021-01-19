@@ -1,5 +1,5 @@
 .programs {
-  padding-bottom: 34px;
+  padding-bottom: 23px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -9,8 +9,8 @@
 
 .programs__item {
   background-color: $grey-base;
-  margin-top: 20px;
   padding: 20px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
@@ -28,7 +28,7 @@
   &--slim {
     background-image: url("../img/cat-sit.svg");
     background-repeat: no-repeat;
-    background-position: 20px 25px;
+    background-position: 22px 21px;
 
     @media (min-width: $tablet-width) {
       background-position: 470px 70px;
@@ -46,7 +46,7 @@
   &--pro {
     background-image: url("../img/cat-walk.svg");
     background-repeat: no-repeat;
-    background-position: 13px 32px;
+    background-position: 13px 24px;
 
     @media (min-width: $tablet-width) {
       padding-right: 315px;
@@ -66,7 +66,9 @@
 .programs__title {
   @include third-title-style;
   text-transform: uppercase;
-  padding-left: 70px;
+  padding-left: 71px;
+  margin-bottom: 34px;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -80,8 +82,10 @@
 }
 
 .programs__description {
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $grey-border;
+  margin-bottom: 17px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -98,7 +102,7 @@
   padding-right: 70px;
   background-image: url("../img/icon-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 100px 7px;
+  background-position: 101px 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

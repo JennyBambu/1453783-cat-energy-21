@@ -4,8 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-
+  padding-top: 49px;
+  padding-left: 72px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -15,7 +16,7 @@
 .social__link {
   text-decoration: none;
   fill: $grey-icon;
-  margin-right: 22px;
+  margin-right: 37px;
 
   &:hover {
     fill: $green-base;

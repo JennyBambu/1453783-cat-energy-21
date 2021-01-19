@@ -1,5 +1,6 @@
 .header {
-  padding-top: 10px;
+  padding-top: 12px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;

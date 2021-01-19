@@ -45,7 +45,7 @@
 
 .example__title {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 
   @include second-title-style;
 
@@ -57,6 +57,7 @@
 .example__intro {
   margin-top: 0;
   margin-bottom: 25px;
+  line-height: 18px;
 
   @media (min-width: $desktop-width) {
     width: 73%;

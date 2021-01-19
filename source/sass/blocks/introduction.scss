@@ -1,3 +1,7 @@
+.introduction {
+  margin-bottom: 22px;
+}
+
 .introduction__text-wrapper {
   background-image: url("../img/backgroundcat.png");
   background-position: 50%;
@@ -33,7 +37,7 @@
 .introduction__title {
   font-weight: 400;
   font-size: 36px;
-  margin: 0 0 25px;
+  margin: 0 0 23px;
   font-family: $font-add;
   line-height: 36px;
   padding-top: 27px;
@@ -59,7 +63,7 @@
 
 .introduction__text {
   margin: 0;
-  padding-bottom: 160px;
+  padding-bottom: 163px;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
@@ -83,9 +87,9 @@
     content: "";
     background-image: url("../img/promo-index.png");
     position: absolute;
-    left: 22px;
+    left: 20px;
     display: inline-block;
-    bottom: 40px;
+    bottom: 43px;
     width: 280px;
     height: 270px;
     z-index: -1;
