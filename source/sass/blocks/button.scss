@@ -1,6 +1,6 @@
 .button {
   background-color: $green-base;
-  padding: 11px 44px 12px;
+  padding: 11px 44px 9px;
   text-decoration: none;
   color: $color-white-base;
   width: 100%;
@@ -9,11 +9,12 @@
   text-transform: uppercase;
   text-align: center;
   font-family: $font-add;
-  font-size: 14px;
+  font-size: 16px;
 
   &--introduction {
     margin-top: 138px;
     position: relative;
+    font-size: 14px;
 
     @media (min-width: $tablet-width) {
       width: 244px;
@@ -53,6 +54,27 @@
     background-color: $grey-undeground;
     color: $color-base;
     margin-bottom: 25px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 30px;
+      left: 139px;
+      top: 26px;
+      background-color: $grey-plus;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      left: 125px;
+      top: 40px;
+      background-color: $grey-plus;
+      transform: rotate(-180deg);
+    }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;

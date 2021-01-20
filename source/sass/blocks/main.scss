@@ -1,6 +1,8 @@
 .main {
-  &--form {
-    overflow-x: hidden;
+  overflow-x: hidden;
+
+  &--index {
+    overflow-x: visible;
   }
 }
 
@@ -8,8 +10,8 @@
   @include second-title-style;
 
   &--catalog {
-    margin-top: 27px;
-    padding-bottom: 40px;
+    margin-top: 22px;
+    padding-bottom: 35px;
     margin-bottom: 0;
   }
 }

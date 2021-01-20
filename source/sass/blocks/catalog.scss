@@ -27,7 +27,7 @@
 }
 
 .catalog__item {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     background-color: $grey-base;
@@ -65,6 +65,8 @@
 .catalog__item-title {
   @include third-title-catalog-style;
   width: 100px;
+  margin-top: 21px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     width: 155px;
@@ -84,6 +86,8 @@
 }
 
 .catalog__image {
+  padding-top: 9px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     height: auto;
@@ -97,7 +101,7 @@
 }
 
 .catalog__item-description {
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   width: 50%;
 
   @media (min-width: $tablet-width) {
@@ -109,6 +113,7 @@
 
 .catalog__table {
   width: 100%;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     border-collapse: collapse;
@@ -116,6 +121,14 @@
 }
 
 .catalog__table-row {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+
+  &:first-of-type {
+    width: 139px;
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-input-additional;
   }
@@ -124,6 +137,7 @@
 .catalog__table-th {
   text-align: left;
   font-weight: 400;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 8px 0 7px;
@@ -132,11 +146,13 @@
 
 .catalog__table-td {
   text-align: right;
+  padding-top: 0;
 }
 
 .catalog__all {
   padding-bottom: 25px;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $grey-base;
@@ -183,8 +199,8 @@
 
 .catalog__all-title {
   @include third-title-catalog-style;
-  padding-top: 75px;
-  margin: 0;
+  padding-top: 79px;
+  margin: 0 0 8px;
   color: $black-add;
 
   @media (min-width: $tablet-width) {
@@ -206,8 +222,22 @@
 
 .catalog__title {
   @include third-title-style;
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin-top: -3px;
+  margin-bottom: 32px;
+  position: relative;
+  background-color: white;
+  width: 247px;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 150vw;
+    background-color: $green-base;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -231,7 +261,7 @@
 
 .catalog__list-item {
   border-bottom: 1px solid $border-input-additional;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   &:first-child {
     @media (min-width: $desktop-width) {
@@ -257,6 +287,7 @@
 
 .catalog__list-item-title {
   @include third-title-catalog-style;
+    margin: 12px 0 0 1px;
 
   @media (min-width: $desktop-width) {
     margin: 25px 0 26px;
@@ -266,6 +297,9 @@
 .catalog__additional-list {
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  margin-top: 9px;
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     width: 288px;
@@ -285,11 +319,11 @@
 }
 
 .catalog__present {
-  margin-top: 38px;
+  margin-top: 39px;
   margin-bottom: 35px;
   background-color: $green-base;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo.png");
-  background-position: 100px 40px, 0;
+  background-position: 100px 57px, 0;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
