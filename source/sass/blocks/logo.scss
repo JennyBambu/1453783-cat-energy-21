@@ -5,7 +5,18 @@
     }
   }
 
-  &--footer:active {
-    opacity: 0.3;
+  &--footer {
+    display: block;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding-top: 24px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

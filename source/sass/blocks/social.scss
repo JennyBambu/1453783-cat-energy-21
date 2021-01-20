@@ -1,15 +1,13 @@
 .social {
-  padding: 20px;
   border-bottom: 1px solid $grey-border;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 49px;
-  padding-left: 72px;
-  padding-bottom: 16px;
+  padding: 49px 20px 16px 72px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 18px 20px 24px 17px;
   }
 }
 
@@ -24,5 +22,31 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 26px;
+  }
+
+  &--instagram svg {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--vkontakte svg {
+    @media (min-width: $tablet-width) {
+      width: 31px;
+      height: 32px;
+    }
+  }
+
+  &--facebook svg {
+    @media (min-width: $tablet-width) {
+      width: 21px;
+      height: 29px;
+    }
   }
 }
