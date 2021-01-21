@@ -56,17 +56,29 @@
     margin-bottom: 25px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 2px;
       height: 30px;
       left: 139px;
       top: 26px;
       background-color: $grey-plus;
+
+      @media (min-width: $tablet-width) {
+        height: 60px;
+        left: 160px;
+        top: 53px;
+      }
+
+      @media (min-width: $desktop-width) {
+        height: 60px;
+        left: 120px;
+        top: 51px;
+      }
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 30px;
       height: 2px;
@@ -74,11 +86,23 @@
       top: 40px;
       background-color: $grey-plus;
       transform: rotate(-180deg);
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+        left: 130px;
+        top: 83px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 60px;
+        left: 90px;
+        top: 81px;
+      }
     }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
-      padding: 11px 39px;
+      padding: 11px 39px 10px;
     }
   }
 }
