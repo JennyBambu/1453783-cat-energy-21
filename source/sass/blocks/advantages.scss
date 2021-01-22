@@ -1,12 +1,19 @@
 .advantages {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__title {
+  @include second-title-style;
   margin-top: 0;
   margin-bottom: 33px;
 
-  @include second-title-style;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .advantages__list {
@@ -21,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 230px 246px 248px 246px;
+    grid-template-columns: 248px 248px 248px 246px;
     grid-gap: 77px;
   }
 }
@@ -37,6 +44,15 @@
   &:first-child {
     padding-top: 5px;
     background-position: 0 2px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 140px;
+      background-position: 0 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 0 28px;
+    }
   }
 
   &--nutrients {
@@ -56,23 +72,28 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 140px 30px 60px 0;
+    padding: 140px 80px 60px 0;
     width: 245px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     position: relative;
     background-size: 80px 80px;
     background-position: 0 30px;
+    line-height: inherit;
 
     &::before {
       counter-increment: section;
       content: counters(section, ".");
-      font-size: 280px;
       font-family: "Oswald", "Verdana", sans-serif;
       color: $grey-base;
       position: absolute;
-      top: -80px;
-      right: 40px;
+      top: -82px;
+      left: 115px;
       z-index: -1;
+      font-size: 279px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 0 28px;
   }
 }

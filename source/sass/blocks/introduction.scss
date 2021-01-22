@@ -44,20 +44,17 @@
   position: relative;
   z-index: 2;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-    margin: 100px 0 25px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 60%;
     font-size: 60px;
     line-height: 60px;
-    margin-left: 90px;
+    margin: 26px auto 36px 87px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 40%;
+    padding-top: 0;
+    margin: 101px 0 36px 80px;
+    width: 45%;
   }
 }
 
@@ -75,7 +72,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 46px;
+    margin-left: 80px;
   }
 }
 
@@ -83,15 +81,19 @@
   position: relative;
   z-index: 2;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 237px;
+  }
+
   &::after {
     content: "";
     background-image: url("../img/promo-index.png");
     position: absolute;
     left: 20px;
     display: inline-block;
-    bottom: 43px;
+    bottom: 46px;
     width: 280px;
-    height: 270px;
+    height: 267px;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
@@ -103,8 +105,8 @@
       background-image: url("../img/promo-index-big.png");
       width: 709px;
       height: 609px;
-      left: 34px;
-      top: -25px;
+      left: 29px;
+      top: -29px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/promo-index-big@2x.png");
