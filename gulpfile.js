@@ -64,7 +64,6 @@ const images = () => {
     ]))
     .pipe(gulp.dest("build/img"))
 }
-
 exports.images = images;
 
 // WebP
@@ -80,10 +79,10 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.svg")
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
@@ -94,7 +93,6 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}",
   ], {
     base: "source"
   })
@@ -115,7 +113,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -132,7 +130,6 @@ const reload = done => {
   sync.reload();
   done();
 }
-
 
 // Watcher
 
@@ -159,7 +156,6 @@ const build = gulp.series(
 exports.build = build;
 
 // Default
-
 exports.default = gulp.series(
   clean,
   gulp.parallel(
@@ -168,6 +164,7 @@ exports.default = gulp.series(
     scripts,
     sprite,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
