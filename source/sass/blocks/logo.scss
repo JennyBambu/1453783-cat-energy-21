@@ -3,6 +3,14 @@
     @media (min-width: $tablet-width) {
       padding-top: 8px;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--footer {
@@ -15,8 +23,12 @@
       padding-top: 24px;
     }
 
+    &:hover {
+      opacity: 0.8;
+    }
+
     &:active {
-      opacity: 0.3;
+      opacity: 0.6;
     }
   }
 }

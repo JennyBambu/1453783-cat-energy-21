@@ -32,14 +32,14 @@
   }
 
   &--textarea {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 70px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 73px;
+      margin-bottom: 71px;
     }
   }
 
@@ -64,8 +64,15 @@
   }
 
   &--information {
-    & :last-of-type {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    &:last-of-type {
       margin-bottom: 0;
+      width: 75%;
     }
 
     @media (min-width: $desktop-width) {
@@ -74,6 +81,9 @@
   }
 
   &--radio {
+    margin-bottom: 28px;
+    position: relative;
+
     @media (min-width: $tablet-width) {
       border: 1px solid $border-input;
       padding-top: 32px;
@@ -108,7 +118,8 @@
       background-color: $grey-undeground;
       display: block;
       margin-left: calc((280px - 100vw) / 2);
-      margin-bottom: 25px;
+      position: absolute;
+      top: -27px;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -126,7 +137,7 @@
 }
 
 .form__group-checkbox-wrapper {
-  margin-top: 6px;
+  margin-top: 4px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -142,8 +153,13 @@
 }
 
 .form__group-input-wrapper {
+  margin-bottom: 24px;
+  height: 18px;
+
   @media (min-width: $tablet-width) {
     width: 286px;
+    margin-bottom: 0;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -201,10 +217,11 @@
   }
 
   &--contacts {
-    margin-bottom: 14px;
+    position: relative;
+    margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -216,16 +233,23 @@
     padding-left: 45px;
     position: relative;
     margin-bottom: 23px;
+    height: 20.5px;
+
+    @media (min-width: $tablet-width) {
+      height: auto;
+    }
   }
 
   &--checkbox {
     padding-bottom: 7px;
     padding-left: 45px;
     position: relative;
+    height: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 34px;
       padding-left: 58px;
+      height: auto;
     }
   }
 }
@@ -235,53 +259,121 @@
   width: 100%;
   padding-top: 9px;
   padding-left: 15px;
-  border: 1px solid $border-input;
-  padding-bottom: 9px;
+  outline: 1px solid $border-input;
+  padding-bottom: 11px;
   text-transform: uppercase;
   font-family: $font-add;
   font-size: 16px;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 11px;
     font-size: 20px;
     padding-left: 18px;
     margin-left: 18px;
+    border: none;
+  }
+
+  &:hover {
+    outline: 1px solid $border-input;
+  }
+
+  &:focus {
+    outline: 2px solid $color-base;
   }
 
   &::placeholder {
     color: $color-base;
   }
 
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    outline: 2px solid $error;
+  }
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
   &--email {
-    border-color: $border-input-additional;
-    background-image: url("../img/icon-email.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
+    outline: 1px solid $border-input-additional;
     margin-left: 11px;
     padding-top: 10px;
     padding-bottom: 9px;
 
+    &:hover {
+      outline: 1px solid $border-input-additional;
+    }
+
     @media (min-width: $tablet-width) {
-      padding: 11px 18px;
+      padding: 10px 18px 11px;
       margin-left: 21px;
     }
   }
 
   &--tel {
-    border-color: $border-input-additional;
+    outline: 1px solid $border-input-additional;
     margin-bottom: 0;
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 45%;
     margin-left: 11px;
     padding-top: 10px;
     padding-bottom: 9px;
 
-    @media (min-width: $tablet-width) {
-      padding: 11px 18px;
-      margin-left: 15px;
+    &:hover {
+      outline: 1px solid $border-input-additional;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 15px;
+      padding-left: 19px;
+    }
+  }
+
+  &--error {
+    outline: 2px solid $error;
+  }
+}
+
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form__input--email:focus + svg {
+  fill: $green-base;
+}
+
+.form__input--tel:focus + svg {
+  fill: $green-base;
+}
+
+.form__input--error + svg {
+  fill: $error;
+}
+
+.form__email-svg {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+    top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+  }
+}
+
+.form__phone-svg {
+  position: absolute;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
   }
 }
 
@@ -302,6 +394,14 @@
   }
 }
 
+.form__input-radio:hover + label::before {
+  border-color: $hover-custom-input;
+}
+
+.form__input-radio:disabled + label {
+  opacity: 0.3;
+}
+
 .form__input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -317,6 +417,11 @@
     width: 18px;
     height: 18px;
     top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -5px;
+    top: 3px;
   }
 }
 
@@ -339,6 +444,19 @@
     width: 37px;
     height: 37px;
   }
+}
+
+.form__input-checkbox:hover + label::before {
+  border-color: $hover-custom-input;
+}
+
+.form__input-checkbox:disabled + .form__field--checkbox {
+  opacity: 0.3;
+}
+
+.form__input-checkbox:disabled + label::before {
+  opacity: 0.3;
+  border-color: $hover-custom-input;
 }
 
 .form__input-checkbox:checked + label::before {
@@ -371,8 +489,9 @@
   box-sizing: border-box;
   border-color: $border-input;
   resize: none;
-  margin-top: 4px;
   padding-top: 6px;
+  margin-top: 2px;
+  border: 1px solid $border-input;
 
   @media (min-width: $tablet-width) {
     height: 174px;
@@ -420,7 +539,7 @@
 
 .form__group-title-text {
   display: inline-block;
-  background-color: white;
+  background-color: $color-white-base;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {

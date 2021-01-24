@@ -11,6 +11,14 @@
   font-family: $font-add;
   font-size: 16px;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+
   &--introduction {
     margin-top: 138px;
     position: relative;
@@ -37,13 +45,15 @@
     border: none;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     font-size: 16px;
+    height: 40px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       padding-top: 11px;
       padding-bottom: 11px;
+      height: auto;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,6 +65,14 @@
     background-color: $grey-undeground;
     color: $color-base;
     margin-bottom: 25px;
+
+    &:hover {
+      background-color: $grey-hover;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
 
     &::before {
       content: "";

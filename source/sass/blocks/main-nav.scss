@@ -90,6 +90,8 @@
     background-color: $grey-undeground;
     display: block;
     margin-left: calc((280px - 100vw) / 2);
+    margin-top: 11px;
+    position: absolute;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -105,7 +107,6 @@
   text-decoration: none;
   font-family: $font-add;
   padding-bottom: 24px;
-  display: block;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -121,6 +122,31 @@
       color: $color-white-base;
     }
   }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $green-base;
+      padding-bottom: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 7px;
+    }
+  }
+
+  &[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__list--index .main-nav__link--active {
+  border-color: $color-white-base;
 }
 
 .main-nav__toggle {

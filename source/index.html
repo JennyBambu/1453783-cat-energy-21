@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -43,7 +45,6 @@
         <a class="button  button--introduction" href="form.html">Подобрать программу</a>
       </div>
     </div>
-
 
       <div class="container">
         <section class="programs">
@@ -116,13 +117,13 @@
             </picture>
             </div>
 
-            <div class="example__control control">
-              <button class="example__button control__button" type="button">Было</button>
-              <div class="control__scale">
-                <div class="control__bar"></div>
-                <div class="control__toggle"></div>
+            <div class="example__control">
+              <button class="example__button" type="button">Было</button>
+              <div class="example__scale">
+                <div class="example__bar"></div>
+                <div class="example__toggle"></div>
               </div>
-              <button class="slider__button control__button" type="button">Стало</button>
+              <button class="example__button" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -135,30 +136,32 @@
           <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map">
-          <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" allowfullscreen="" frameborder="0"></iframe>
+          <iframe class="location__iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" allowfullscreen="" aria-hidden="false" tabindex="-1">
+          </iframe>
         </div>
-    </section>
+      </section>
 
       <div class="footer__bottom">
         <div class="container footer__bottom-elements">
-          <a class="logo logo--footer" href="index.html">
+          <a class="logo logo--footer" href="index.html" aria-label="Переход на главную страницу">
             <svg width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
 
           <div class="social">
-            <a class="social__link social__link--vkontakte" href="#" target="_blank">
+            <a class="social__link social__link--vkontakte" href="#" target="_blank" aria-label="Мы ВКонтакте">
               <svg width="23" height="16">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
-            <a class="social__link social__link--instagram" href="#" target="_blank">
+            <a class="social__link social__link--instagram" href="#" target="_blank" aria-label="Мы в Инстаграм">
               <svg width="16" height="16">
                 <use xlink:href="img/sprite.svg#ig"></use>
               </svg>
             </a>
-            <a class="social__link social__link--facebook" href="#" target="_blank">
+            <a class="social__link social__link--facebook" href="#" target="_blank" aria-label="Мы в Фейсбук">
               <svg width="13" height="20">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
@@ -166,7 +169,7 @@
           </div>
 
           <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на сайт HTML Academy">
               <p class="copyright__text">HTML Academy</p>
               <svg width="27" height="34">
                 <use xlink:href="img/sprite.svg#logo-academy"></use>
