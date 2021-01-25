@@ -1,21 +1,24 @@
 .social {
-  padding: 20px;
   border-bottom: 1px solid $grey-border;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-
+  padding: 20px 20px 17px 72px;
 
   @media (min-width: $tablet-width) {
-    border: none;
+    padding: 13px 20px 24px 17px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 20px 24px 17px;
   }
 }
 
 .social__link {
   text-decoration: none;
   fill: $grey-icon;
-  margin-right: 22px;
+  margin-right: 37px;
 
   &:hover {
     fill: $green-base;
@@ -23,5 +26,31 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 26px;
+  }
+
+  &--instagram svg {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--vkontakte svg {
+    @media (min-width: $tablet-width) {
+      width: 31px;
+      height: 32px;
+    }
+  }
+
+  &--facebook svg {
+    @media (min-width: $tablet-width) {
+      width: 21px;
+      height: 29px;
+    }
   }
 }

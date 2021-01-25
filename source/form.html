@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -31,21 +33,21 @@
       </nav>
     </header>
 
-    <main class="main main--form">
+    <main class="main">
       <section class="matching container">
         <h1 class="matching__title">Подбор программы</h1>
         <p class="matching__intro">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" method="get" action="https://echo.htmlacademy.ru">
           <div class="form__fieldset-group">
             <fieldset class="form__group form__group--information">
-              <label class="form__field">Имя:<sup>*</sup>
-                <input class="form__input" type="text" name="name" placeholder="Барсик">
+              <label class="form__field">Имя:*
+                <input class="form__input" type="text" name="name" placeholder="Барсик" required>
               </label>
-              <label class="form__field">Вес(кг):<sup>*</sup>
-                <input class="form__input" type="text" name="weight" placeholder="7">
+              <label class="form__field">Вес (кг):*
+                <input class="form__input" type="number" name="weight" placeholder="7" required>
               </label>
               <label class="form__field">Возраст (лет):
-                <input class="form__input" type="text" name="age" placeholder="7">
+                <input class="form__input" type="number" name="age" placeholder="7">
               </label>
             </fieldset>
 
@@ -58,19 +60,25 @@
               <label class="form__field form__field--radio" for="advice">Не знаю (нужен ваш совет)</label>
             </fieldset>
           </div>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--contacts">
             <legend class="form__group-title form__group-title--decorated"><span class="form__group-title-text">Контактные данные (владельца кота)</span></legend>
             <div class="form__fieldset-wrapper">
-              <label class="form__field form__field--contacts">E-mail:<sup>*</sup>
-                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              <label class="form__field form__field--contacts">E-mail:*
+                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="form__email-svg" width="19" height="14">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
               </label>
-              <label class="form__field form__field--contacts">Телефон:<sup>*</sup>
-                <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8-[0-9]{3}-[0-9]{3}">
+              <label class="form__field form__field--contacts">Телефон:*
+                <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+                <svg class="form__phone-svg" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </label>
           </div>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--textarea">
             <legend class="form__group-title form__group-title--decorated"><span class="form__group-title-text">Комментарий</span></legend>
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
@@ -87,7 +95,7 @@
                 <label class="form__field form__field--checkbox" for="water">Питьевая вода</label>
               </div>
               <div class="form__group-input-wrapper">
-                <input class="visually-hidden form__input-checkbox" id="milk" type="checkbox" name="milk">
+                <input class="visually-hidden form__input-checkbox" id="milk" type="checkbox" name="milk" disabled>
                 <label class="form__field form__field--checkbox" for="milk">Молоко</label>
               </div>
               <div class="form__group-input-wrapper">
@@ -111,30 +119,32 @@
           <p class="location__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="location__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map">
-          <iframe class="location__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" width="100%" allowfullscreen="" frameborder="0"></iframe>
+          <iframe class="location__iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af522d87c9ff46344d920b3344d5aee93c3016303ebe2baf3e7dbc5c3dee1fa&amp;source=constructor" allowfullscreen="" aria-hidden="false" tabindex="-1">
+          </iframe>
         </div>
       </section>
 
       <div class="footer__bottom">
         <div class="container footer__bottom-elements">
-          <a class="logo logo--footer" href="index.html">
+          <a class="logo logo--footer" href="index.html" aria-label="Переход на главную страницу">
             <svg width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
 
           <div class="social">
-            <a class="social__link social__link--vkontakte" href="#" target="_blank">
+            <a class="social__link social__link--vkontakte" href="#" target="_blank" aria-label="Мы ВКонтакте">
               <svg width="23" height="16">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
-            <a class="social__link social__link--instagram" href="#" target="_blank">
+            <a class="social__link social__link--instagram" href="#" target="_blank" aria-label="Мы в Инстаграм">
               <svg width="16" height="16">
                 <use xlink:href="img/sprite.svg#ig"></use>
               </svg>
             </a>
-            <a class="social__link social__link--facebook" href="#" target="_blank">
+            <a class="social__link social__link--facebook" href="#" target="_blank" aria-label="Мы в Фейсбук">
               <svg width="13" height="20">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
@@ -142,7 +152,7 @@
           </div>
 
           <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на сайт HTML Academy">
               <p class="copyright__text">HTML Academy</p>
               <svg width="27" height="34">
                 <use xlink:href="img/sprite.svg#logo-academy"></use>
@@ -152,5 +162,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

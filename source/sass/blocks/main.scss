@@ -1,6 +1,8 @@
 .main {
-  &--form {
-    overflow-x: hidden;
+  overflow-x: hidden;
+
+  &--index {
+    overflow-x: visible;
   }
 }
 
@@ -8,8 +10,16 @@
   @include second-title-style;
 
   &--catalog {
-    margin-top: 27px;
-    padding-bottom: 40px;
+    margin-top: 22px;
+    padding-bottom: 36px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 52px;
+    }
   }
 }

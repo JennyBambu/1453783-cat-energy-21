@@ -1,21 +1,27 @@
 $font-base: "Arial", sans-serif;
 $font-add: "Oswald", "Arial", sans-serif;
-
-$color-base: #444444;
-$color-white-base: #ffffff;
+$color-base:#444444;
+$color-white-base:#ffffff;
 $black-bold: #000000;
 $grey-undeground: #e6e6e6;
+$grey-hover: #ebebeb;
+$hover-custom-input:#bababa;
 $green-base: #68b738;
 $green-additional: #64a73c;
 $green-background: #63a63a;
+$green-hover: #5eaa2f;
 $grey-base: #f2f2f2;
-$grey-additional: #eaeaea;
+$grey-additional:#eaeaea;
 $grey-border: #d9d9d9;
-$grey-icon: #666666;
-$black-add: #111111;
-$border-input: #e7e7e7;
-$border-input-additional: #cdcdcd;
-$black-special: #222222;
-
+$grey-icon:#666666;
+$grey-plus:#d3d3d3;
+$black-add:#111111;
+$control: #dcdcdc;
+$border-input:#e7e7e7;
+$border-input-additional:#cdcdcd;
+$black-special:#222222;
+$shadow:rgba(0, 0, 0, 0.16);
+$active:rgba(255, 255, 255, 0.3);
+$error:#ff8282;
 $tablet-width: 768px;
 $desktop-width: 1440px;

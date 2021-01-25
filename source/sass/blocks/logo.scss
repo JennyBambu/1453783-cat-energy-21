@@ -3,9 +3,32 @@
     @media (min-width: $tablet-width) {
       padding-top: 8px;
     }
+
+    &[href]:hover {
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
   }
 
-  &--footer:active {
-    opacity: 0.3;
+  &--footer {
+    display: block;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding-top: 24px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
